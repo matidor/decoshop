@@ -1,0 +1,172 @@
+/* styles/GiftBoxesSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap');
+
+.gift-boxes {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: row; /* Cambiado a fila para alinear horizontalmente */
+}
+
+.gift-boxes h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color: #474545;
+  align-self: flex-start;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.gift-boxes-filter {
+  display: flex; /* Establece un nuevo contenedor flex para h3 y el select */
+  align-items: center; /* Alinea verticalmente en el centro */
+}
+
+
+
+/* Estilos para los botones de filtro */
+.gift-boxes .filter-button {
+  font-size: 1.2rem;
+  font-family: "Montserrat", Sans-serif;
+  color: #666;
+  background-color: #ddedfd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end; 
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.gift-boxes .filter-button:hover {
+  background-color: #e8b1f33a;
+  color: #666;
+  font-size: 20px;
+}
+
+.filter-option {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  margin-bottom: 10px; /* Margen inferior para la separación vertical */
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px; /* Ancho máximo de la tarjeta */
+  margin: 0 auto; /* Centrar la tarjeta en el contenedor */
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card img:hover {
+  transform: scale(1.01); /* Cambia el valor para ajustar la escala */
+  opacity: 0.8; /* Cambia el valor para ajustar la opacidad */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agrega transiciones para ambos efectos */
+}
+
+.product-card h2 {
+  font-size: 1.1rem; /* Tamaño de fuente más pequeño */
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+  color: #666;
+  margin: 0;
+}
+
+.product-card button {
+  background-color: #b7d8fc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px; /* Reducir el padding */
+  cursor: pointer;
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+}
+
+.product-card button:hover {
+  background-color: #c0a6da;
+}
+
+
+/* Estilo para el carrito */
+.cart {
+  position: fixed; /* Fijar la posición */
+  top: 0;
+  right: 0px; /* Inicialmente, el carrito estará fuera de la pantalla */
+  width: 380px; /* Ancho del carrito */
+  height: 100%; /* Alto del carrito */
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra en el lado izquierdo */
+  transition: right 0.3s ease-in-out; /* Transición para suavizar la apertura/cierre */
+  z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Estilo para el botón de cierre */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Estilo para la lista de productos en el carrito */
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para los elementos de la lista de productos */
+.cart li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para el botón de eliminar */
+.cart button {
+  background-color: rgb(151, 135, 135);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de compra en el carrito */
+.cart .checkout-button {
+  background-color: rgb(199, 203, 223);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}

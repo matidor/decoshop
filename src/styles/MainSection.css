@@ -1,0 +1,88 @@
+/* MainSection.css */
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+  background-color: #f0f0f0;
+}
+
+/* Estilo para las flechas de navegación del carrusel */
+.carousel .control-arrow {
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Estilo para los indicadores de navegación del carrusel */
+.carousel .carousel-status {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  background-image: linear-gradient(41deg, #dae7f0 6%, #fbf6f6 50%, #f5e3f4 100%);
+}
+
+
+/* Estilo para el carrusel en pantallas más grandes */
+@media (min-width: 768px) {
+  .carousel {
+    background-color: #f0f0f0;
+  }
+
+  /* Estilo para las flechas de navegación del carrusel */
+  .carousel .control-arrow {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  /* Estilo para los indicadores de navegación del carrusel */
+  .carousel .carousel-status {
+    color: #333;
+    font-size: 18px;
+  }
+}
+
+/* Estilo para el título del héroe en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 0.8rem;
+    background-color: #007BFF;
+    color: #685353;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+@media (max-width:480px) {
+  .carousel .slide img {
+    width: 100vw;
+    height: 460px;
+    object-fit: cover;
+  }
+}
+

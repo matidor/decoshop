@@ -1,0 +1,153 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c9b0d721;
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item a {
+    font-family: "Montserrat", Sans-serif;
+    text-decoration: none;
+    color: #2e2c2c;
+    font-size: 0.9em;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #e4c8eb;
+}
+
+.icons-nav {
+    font-size: 1.3rem;
+}
+
+.icons-nav a {
+    text-decoration: none;
+    color: #2e2c2c;
+    transition: color 0.2s ease-in-out;
+}
+
+.icons-nav a:hover {
+    color: #e4c8eb;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}
+
+/* Media query para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+        width: 200px;
+        margin-right: 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .icons-nav {
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .mobile-menu-icon {
+        order: 1;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    /* Estilos para el ícono del menú en dispositivos móviles al pasar el cursor */
+    .mobile-menu-icon:hover {
+        color: #a600e7;
+    }
+
+    /* Estilos generales del menú desplegable */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-top: 8rem; /* Ajusta el valor según el espacio deseado */
+        margin-top: 0;
+        top: 0;
+        left: -10%;
+        background-color: rgba(253, 249, 255, 0.979);
+        box-shadow: 0 2px 10px rgb(0, 0, 0);
+        color: #494444;
+        width: 100%;
+        max-width: 300px;
+        height: 100vh;
+        z-index: 999;
+        transition: left 0.3s ease;
+        transform: translateX(0);
+      }
+
+      .nav-links.active .nav-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px; /* Espacio debajo de cada elemento */
+      }
+
+
+    /* Ícono de cierre */
+    .close-icon {
+        font-size: 1.5rem; /* Ajusta este valor según tus preferencias */
+        color: #363333ab;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    /* Mostrar el menú al activar el botón */
+    .nav-links.active.show-menu {
+        left: 0;
+    }
+
+    /* Estilos específicos para los enlaces del menú desplegable */
+    .nav-links.active .nav-item a {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 0.9rem;
+        color: #524d4d;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .nav-links.active .nav-item a:hover {
+        color: #cc00e7ab;
+    }
+}
+
+
+
