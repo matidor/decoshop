@@ -19,23 +19,23 @@ const ComoComprar = () => {
                 </p>
                 <ol className="centered-list" >
                     <li>
-                        <FaCheckCircle className="icon-check" /> {/* Agrega el ícono antes del elemento */}
+                        <FaCheckCircle className="icon-check" /> 
                         Navega por nuestro catálogo y encuentra los productos que deseas.
                     </li>
                     <li>
-                        <FaCheckCircle className="icon-check" /> {/* Agrega el ícono antes del elemento */}
+                        <FaCheckCircle className="icon-check" />
                         Haz clic en el botón "Agregar al carrito" para cada producto que desees comprar.
                     </li>
                     <li>
-                        <FaCheckCircle className="icon-check" /> {/* Agrega el ícono antes del elemento */}
+                        <FaCheckCircle className="icon-check" />
                         Revisa los productos en tu carrito de compras y procede al pago.
                     </li>
                     <li>
-                        <FaCheckCircle className="icon-check" /> {/* Agrega el ícono antes del elemento */}
+                        <FaCheckCircle className="icon-check" /> 
                         Selecciona un método de pago y proporciona la información necesaria.
                     </li>
                     <li>
-                        <FaCheckCircle className="icon-check" /> {/* Agrega el ícono antes del elemento */}
+                        <FaCheckCircle className="icon-check" />
                         Confirma tu compra y recibirás una confirmación por correo electrónico.
                     </li>
                 </ol>

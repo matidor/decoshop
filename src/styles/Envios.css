@@ -10,13 +10,12 @@
     
 }
 
-/* Estilos para el breadcrumb */
 .breadcrumbs-envios {
     font-size: 14px;
     color: #666666;
     margin-bottom: 10px;
-    text-align: left; /* Alinea el breadcrumb a la izquierda */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left;
+    width: 100%; 
 }
 
 .breadcrumbs-envios a {
@@ -36,7 +35,7 @@
 
 .envios p{
     font-size: 1.2rem;
-    margin-bottom: 40px; /* Espacio entre párrafos */
-    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 40px; 
+    line-height: 1.5; 
 }
 

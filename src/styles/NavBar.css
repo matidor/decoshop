@@ -1,4 +1,4 @@
-/* NavBar.css */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -103,12 +103,10 @@
         padding-right: 10px;
     }
 
-    /* Estilos para el ícono del menú en dispositivos móviles al pasar el cursor */
     .mobile-menu-icon:hover {
         color: #a600e7;
     }
 
-    /* Estilos generales del menú desplegable */
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -134,7 +132,6 @@
     }
 
 
-    /* Ícono de cierre */
     .close-icon {
         font-size: 1.5rem;
         color: #363333ab;
@@ -142,12 +139,10 @@
         align-self: flex-end;
     }
 
-    /* Mostrar el menú al activar el botón */
     .nav-links.active.show-menu {
         left: 0;
     }
 
-    /* Estilos específicos para los enlaces del menú desplegable */
     .nav-links.active .nav-item a {
         font-family: "Montserrat", Sans-serif;
         font-size: 0.9rem;
@@ -160,10 +155,10 @@
     }
 }
 
-/* Estilos generales para iPads y pantallas más pequeñas */
+
 @media (max-width: 1024px) {
     .navbar {
-        height: 80px; /* Ajusta la altura según sea necesario */
+        height: 80px; 
     }
 
     .logo {
@@ -178,24 +173,22 @@
     .icons-nav img {
         width: 24px;
         height: 24px;
-        margin-bottom: 8px; /* Ajusta el margen inferior según sea necesario */
+        margin-bottom: 8px; 
     }
 
     .cart-icon {
-        /* Añade estas propiedades para posicionar a la derecha */
         display: flex;
         align-items: center;
-        margin-left: auto; /* Mueve el ícono del carrito a la derecha */
-        margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+        margin-left: auto; 
+        margin-right: 20px; 
     }
 
     .icons-nav {
         font-size: 1.3rem;
-        margin-left: 91px; /* Ajusta el margen izquierdo según sea necesario */
+        margin-left: 91px;
     }
 
     .mobile-menu-icon {
-        /* Estilos para el ícono del menú en dispositivos móviles al pasar el cursor */
         order: 1;
         display: flex;
         align-items: center;
@@ -205,12 +198,10 @@
         padding-right: 10px;
     }
 
-    /* Estilos para el ícono del menú en dispositivos móviles al pasar el cursor */
     .mobile-menu-icon:hover {
         color: #a600e7;
     }
 
-    /* Estilos generales del menú desplegable */
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -231,28 +222,22 @@
     }
 
     .nav-links.active .nav-item {
-        /* Estilos para los elementos de navegación en el menú desplegable en iPads y pantallas más pequeñas */
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         padding-bottom: 10px;
     }
 
-    /* Ícono de cierre */
     .close-icon {
-        /* Estilos para el ícono de cierre en iPads y pantallas más pequeñas */
         font-size: 1.5rem;
         color: #363333ab;
         cursor: pointer;
         align-self: flex-end;
     }
 
-    /* Mostrar el menú al activar el botón */
     .nav-links.active.show-menu {
         left: 0;
     }
 
-    /* Estilos específicos para los enlaces del menú desplegable */
     .nav-links.active .nav-item a {
-        /* Estilos para los enlaces en el menú desplegable en iPads y pantallas más pequeñas */
         font-family: "Montserrat", Sans-serif;
         font-size: 0.9rem;
         color: #524d4d;
@@ -260,7 +245,6 @@
     }
 
     .nav-links.active .nav-item a:hover {
-        /* Estilos para los enlaces al pasar el cursor en el menú desplegable en iPads y pantallas más pequeñas */
         color: #cc00e7ab;
     }
 }

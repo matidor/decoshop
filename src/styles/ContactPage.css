@@ -1,4 +1,3 @@
-/* ContactPage.css */
 .contact-container {
   height: 60vh; 
   display: flex; 
@@ -8,8 +7,8 @@
 }
   
   .contact-form {
-    width: 600px; /* Ancho deseado */
-    height: 500px; /* Alto deseado */
+    width: 600px;
+    height: 500px; 
     padding: 20px;
     background-color: #f5f9fd;
     border-radius: 5px;
@@ -53,15 +52,13 @@
   }
 
   .footer-contacto{
-      background-color: #333; /* Cambia el color de fondo según tu diseño */
-      color: #fff; /* Cambia el color del texto según tu diseño */
-      padding: 2px;
-      left: 0; /* Alinea el footer a la izquierda */
-      bottom: 0; /* Alinea el footer en la parte inferior */
-      width: 100%; /* Ocupa todo el ancho disponible */
+      background-color: #333; 
+      color: #fff; 
+      left: 0; 
+      bottom: 0; 
+      width: 100%; 
   }
   
- /* Media query para pantallas de hasta 768px */
 @media (max-width: 768px) {
   .contact-container {
       height: auto; 
@@ -72,7 +69,6 @@
   }
 }
 
-/* Media query para pantallas de hasta 480px */
 @media (max-width: 480px) {
   .contact-container {
       height: auto; 

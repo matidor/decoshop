@@ -1,5 +1,3 @@
-/* Estilos para la página "Cómo Comprar" */
-
 .como-comprar {
   background-color: #ffffff;
   padding: 20px;
@@ -9,53 +7,47 @@
   align-items: center;
   text-align: center;
   margin-bottom: 16px;
-  }
-  
-  .como-comprar h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    color: #663;
-    margin-bottom: 40px; /* Espacio entre el encabezado y el párrafo siguiente */
-  }
-  
-  .como-comprar p {
-    font-size: 1.2rem;
-    margin-bottom: 40px; /* Espacio entre párrafos */
-    line-height: 1.5; /* Espaciado entre líneas */
-  }
-  
-  .como-comprar ol {
-    text-align: left; /* Alinear la lista ordenada a la izquierda */
-    margin-left: 20px; /* Espacio en el margen izquierdo de la lista */
-  }
-  
-  .como-comprar a {
-    color: rgb(116, 171, 197);
-    text-decoration: none;
-  }
-  
-  .como-comprar a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  
-  .centered-list li {
-    margin-bottom: 20px; /* Espacio entre elementos de lista */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
-  .icon-check {
-    color: #ade0e9; /* Cambia el color del ícono (verde en este caso) */
-    font-size: 24px; /* Cambia el tamaño del ícono */
-    margin-right: 10px; /* Agrega margen a la derecha del ícono para separarlo del texto */
-  }
-  
-  
-  
-   
-    
+.como-comprar h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #663;
+  margin-bottom: 40px;
+}
 
-  
+.como-comprar p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.como-comprar ol {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.como-comprar a {
+  color: rgb(116, 171, 197);
+  text-decoration: none;
+}
+
+.como-comprar a:hover {
+  text-decoration: underline;
+}
+
+
+
+.centered-list li {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-check {
+  color: #ade0e9;
+  font-size: 24px;
+  margin-right: 10px;
+
+}

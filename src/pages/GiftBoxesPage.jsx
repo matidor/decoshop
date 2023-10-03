@@ -104,7 +104,7 @@ const GiftBoxesPage = () => {
         ))}
       </div>
 
-      {/* Botón ABRIR carrito */}
+      {/* Botón ABRIR carrito que tendria que ser la funcion del icon cart shop */}
       <button onClick={openCart} className="cart-button">
         Carrito ({cart.length})
       </button>

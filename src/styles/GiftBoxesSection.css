@@ -1,4 +1,3 @@
-/*GiftBoxesSection.css */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap');
 
 .gift-boxes {
@@ -26,7 +25,6 @@
 }
 
 
-/* Estilos para los botones de filtro */
 .gift-boxes .filter-button {
   font-size: 1.2rem;
   font-family: "Montserrat", Sans-serif;
@@ -60,7 +58,6 @@
   margin-bottom: 20px;
 }
 
-/* Estilos para las tarjetas de productos */
 .product-card {
   text-align: center;
   background-color: #fff;
@@ -124,7 +121,6 @@
   overflow-y: scroll;
 }
 
-/* Estilo para el botón de cierre */
 .close-button {
   position: absolute;
   top: 20px;
@@ -141,20 +137,17 @@
 }
 
 
-/* Estilo para el título del carrito */
 .cart h2 {
   font-size: 24PX;
   margin-bottom: 60px;
 
 }
 
-/* Estilo para la lista de productos en el carrito */
 .cart ul {
   list-style: none;
   padding: 0;
 }
 
-/* Estilo para los elementos de la lista de productos */
 .cart li {
   display: flex;
   justify-content: space-between;
@@ -164,8 +157,6 @@
 }
 
 
-
-/* Estilo para el botón de eliminar */
 .cart button {
   background-color: rgb(144, 205, 247);
   color: white;
@@ -174,7 +165,6 @@
   cursor: pointer;
 }
 
-/* Estilo para el botón de compra en el carrito */
 .cart .checkout-button {
   background-color: rgb(157, 166, 219);
   color: rgb(119, 91, 91);
@@ -184,7 +174,6 @@
   width: 100%;
 }
 
-/* Media query para pantallas de hasta 768px */
 @media (max-width: 768px) {
   .gift-boxes {
     flex-direction: column;
@@ -214,7 +203,6 @@
   }
 }
 
-/* Media query para pantallas de hasta 480px */
 @media (max-width: 480px) {
   .gift-boxes h2 {
     font-size: 23px;
