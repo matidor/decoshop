@@ -1,6 +1,8 @@
 import Header from '../components/Header';
 import { FaCheckCircle } from 'react-icons/fa';
 import '../styles/ComoComprar.css';
+import Footers from '../components/Footers';
+import WhatsAppButton from '../components/WhattsApp';
 
 const ComoComprar = () => {
     return (
@@ -10,7 +12,7 @@ const ComoComprar = () => {
                 <div className="breadcrumbs">
                     <a href="/">Inicio</a> / Como comprar
                 </div>
-               <h1>¿Como comprar?</h1>
+                <h1>¿Como comprar?</h1>
 
                 <p>
                     Para hacer una compra, simplemente sigue estos pasos:
@@ -47,6 +49,10 @@ const ComoComprar = () => {
                     Fue un placer ayudarte a sorprender. <br />
                     Te esperamos pronto, Sol.</p>
             </section>
+            <div className="footer-comprar">
+                <Footers />
+                <WhatsAppButton />
+            </div>
         </div>
     );
 };

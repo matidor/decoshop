@@ -63,14 +63,14 @@ const products = [
       },
       {
         id: 9,
-        name: 'style',
+        name: 'Candy style',
         price: 7200,
         image: productImage9,
       },
       {
         id: 10,
         name: 'deco',
-        price: 7200,
+        price: 7900,
         image: productImage10,
       },
       {

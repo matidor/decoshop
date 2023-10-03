@@ -4,9 +4,11 @@
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-bottom: 100px;
+
 }
 
 /* Estilos para el breadcrumb */
@@ -14,8 +16,8 @@
     font-size: 14px;
     color: #666666;
     margin-bottom: 10px;
-    text-align: left; /* Alinea el breadcrumb a la izquierda */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left;
+    width: 100%;
 }
 
 .breadcrumbs a {
@@ -72,8 +74,13 @@ h2 {
 a {
     color: #aac7e7;
     text-decoration: none;
+    
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+@media screen (max-width: 480px) {
+    
 }

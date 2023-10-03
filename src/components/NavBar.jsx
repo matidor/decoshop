@@ -1,20 +1,18 @@
 import { useState } from 'react';
 import logo from '../assets/logoo.png';
-import { FaSearch, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; 
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import '../styles/NavBar.css';
+import { IconButton } from '@mui/material';
+import lupaIcon from '../assets/icons/lupa.png';
+import cartIcon from '../assets/icons/cart.png'; 
+import userIcon from '../assets/icons/user.png'; 
 
-const NavBar = ({onCartIconClick}) => {
+const NavBar = ({ onCartIconClick }) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
-  };
-
-  const handleCartIconClick = () => {
-    if (onCartIconClick) {
-      onCartIconClick();
-    }
   };
 
   return (
@@ -22,7 +20,7 @@ const NavBar = ({onCartIconClick}) => {
       <div className={`mobile-menu-icon ${menuVisible ? 'open' : ''}`} onClick={toggleMenu}>
         {menuVisible ? <FaTimes /> : <FaBars />}
       </div>
-      <Link to="/"> 
+      <Link to="/">
         <img src={logo} alt="Logo" className="logo" />
       </Link>
       <ul className={`nav-links ${menuVisible ? 'active' : ''}`}>
@@ -34,17 +32,27 @@ const NavBar = ({onCartIconClick}) => {
             ¡Viví la magia de regalar con Decobox!
           </li>
         )}
-        <li className="nav-item"><Link to="/">Inicio</Link></li> 
+        <li className="nav-item"><Link to="/">Inicio</Link></li>
         <li className="nav-item"><Link to="/gift-boxes">Gift boxes</Link></li>
-        <li className="nav-item"><Link to="/quienes-somos">Quienes somos</Link></li> 
+        <li className="nav-item"><Link to="/quienes-somos">Quienes somos</Link></li>
         <li className="nav-item"><Link to="/como-comprar">Como comprar</Link></li>
         <li className="nav-item"><Link to="/envios">Envios</Link></li>
-        <li className="nav-item"><Link to="/">Contacto</Link></li>
+        <li className="nav-item"><Link to="/contacto">Contacto</Link></li>
       </ul>
 
       <div className="icons-nav">
-        <Link to="/"><FaSearch /></Link> 
-        <a href="/" onClick={handleCartIconClick}><FaShoppingCart /></a> 
+        {/* Ícono de usuario 
+        <IconButton color="inherit">
+          <img src={userIcon} alt="Usuario" /> 
+        </IconButton>*/}
+        {/* Ícono de búsqueda
+        <IconButton color="inherit">
+          <img src={lupaIcon} alt="Buscar" /> 
+        </IconButton> */}
+        {/* Ícono del carrito */}
+        <IconButton color="inherit" className="cart-icon">
+          <img src={cartIcon} alt="Carrito" /> 
+        </IconButton>
       </div>
     </nav>
   );

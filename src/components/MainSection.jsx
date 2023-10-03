@@ -15,8 +15,8 @@ const MainSection = () => {
         <div className="icon-container">
 
         </div>
-        <div className="text-container">
-          <p>Texto debajo de los iconos</p>
+        <div className="div-iconos">
+          <p>otras cosas para agregar</p>
         </div>
       </div>
     </section>

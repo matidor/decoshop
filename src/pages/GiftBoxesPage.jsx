@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import products from '../Data/productData';
 import '../styles/GiftBoxesSection.css';
+import Footers from '../components/Footers';
+import WhatsAppButton from '../components/WhattsApp';
+
 
 const GiftBoxesPage = () => {
   const [selectedOption, setSelectedOption] = useState('');
@@ -60,7 +63,7 @@ const GiftBoxesPage = () => {
   // Calcula el total de la compra
   const calculateTotal = () => {
     const total = cart.reduce((acc, product) => acc + product.price, 0);
-    return total.toFixed(2); 
+    return total.toFixed(2);
   };
 
   return (
@@ -78,13 +81,13 @@ const GiftBoxesPage = () => {
               Ordenar por:
             </option>
             <option value="newest" className="filter-option">
-              Más nuevo
+              Más nuevo:
             </option>
             <option value="highestPrice" className="filter-option">
-              Precio más alto
+              Precio más alto:
             </option>
             <option value="lowestPrice" className="filter-option">
-              Precio más bajo
+              Precio más bajo:
             </option>
           </select>
         </div>
@@ -105,8 +108,6 @@ const GiftBoxesPage = () => {
       <button onClick={openCart} className="cart-button">
         Carrito ({cart.length})
       </button>
-
-      {/* Carrito de compras */}
       {isCartOpen && (
         <div className="cart">
           <h2>Carrito de Compras</h2>
@@ -118,13 +119,15 @@ const GiftBoxesPage = () => {
               </li>
             ))}
           </ul>
+          <button onClick={closeCart} className="close-button">X</button>
           <p>Total: ${calculateTotal()}</p>
-          <button onClick={closeCart} className="close-button">
-            X
-          </button>
         </div>
       )}
+
+      <Footers />
+      <WhatsAppButton />
     </div>
+
   );
 };
 
