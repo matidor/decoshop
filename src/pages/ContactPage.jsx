@@ -1,18 +1,16 @@
-import Header from '../components/Header';
-import '../styles/ContactPage.css';
-import Footers from '../components/Footers';
-import WhatsAppButton from '../components/WhattsApp';
+import "../styles/ContactPage.css";
+import Footers from "../components/Footers";
+import WhatsAppButton from "../components/WhattsApp";
 
 const ContactPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // despues agrego la funcion para enviar los datos.
-    console.log('Formulario enviado');
+    console.log("Formulario enviado");
   };
 
   return (
     <div>
-      <Header />
       <div className="contact-container">
         <div className="contact-form">
           <h2>Contacto</h2>
