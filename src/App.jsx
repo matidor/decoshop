@@ -6,7 +6,10 @@ import ComoComprar from "./pages/ComoComprar";
 import Envios from "./pages/Envios";
 import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
+import Footers from "./components/Footers";
+import WhatsAppButton from "./components/WhattsApp";
 import "./styles/GiftBoxesSection.css";
+import "./styles/WhatsApp.css";
 import { useState } from "react";
 
 const App = () => {
@@ -52,6 +55,10 @@ const App = () => {
           <Route path="/envios" element={<Envios />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
+
+        <Footers />
+
+        <WhatsAppButton />
 
         {isCartOpen && (
           <div className="cart">

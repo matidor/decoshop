@@ -1,8 +1,6 @@
 import { useState } from "react";
 import products from "../Data/productData";
 import "../styles/GiftBoxesSection.css";
-import Footers from "../components/Footers";
-import WhatsAppButton from "../components/WhattsApp";
 
 const GiftBoxesPage = ({ cart, setCart }) => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -76,9 +74,6 @@ const GiftBoxesPage = ({ cart, setCart }) => {
           </div>
         ))}
       </div>
-
-      <Footers />
-      <WhatsAppButton />
     </div>
   );
 };

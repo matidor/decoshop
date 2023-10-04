@@ -1,6 +1,6 @@
 import "../styles/ContactPage.css";
-import Footers from "../components/Footers";
-import WhatsAppButton from "../components/WhattsApp";
+// import Footers from "../components/Footers";
+// import WhatsAppButton from "../components/WhattsApp";
 
 const ContactPage = () => {
   const handleSubmit = (e) => {
@@ -35,10 +35,10 @@ const ContactPage = () => {
           </form>
         </div>
       </div>
-      <div className="footer-contacto">
+      {/* <div className="footer-contacto">
         <Footers />
         <WhatsAppButton />
-      </div>
+      </div> */}
     </div>
   );
 };

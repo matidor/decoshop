@@ -1,6 +1,6 @@
 import "../styles/QuienesSomos.css";
-import Footers from "../components/Footers";
-import WhatsAppButton from "../components/WhattsApp";
+// import Footers from "../components/Footers";
+// import WhatsAppButton from "../components/WhattsApp";
 
 const QuienesSomos = () => {
   return (
@@ -39,10 +39,10 @@ const QuienesSomos = () => {
         </p>
         <p>¡Viví la magia de regalar con Decobox! 💫</p>
       </section>
-      <div className="footer-quienes-somos">
+      {/* <div className="footer-quienes-somos">
         <Footers />
         <WhatsAppButton />
-      </div>
+      </div> */}
     </div>
   );
 };

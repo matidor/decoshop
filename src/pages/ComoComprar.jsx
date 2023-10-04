@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 import "../styles/ComoComprar.css";
-import Footers from "../components/Footers";
-import WhatsAppButton from "../components/WhattsApp";
+// import Footers from "../components/Footers";
+// import WhatsAppButton from "../components/WhattsApp";
 
 const ComoComprar = () => {
   return (
@@ -51,10 +51,10 @@ const ComoComprar = () => {
           Te esperamos pronto, Sol.
         </p>
       </section>
-      <div className="footer-comprar">
+      {/* <div className="footer-comprar">
         <Footers />
         <WhatsAppButton />
-      </div>
+      </div> */}
     </div>
   );
 };

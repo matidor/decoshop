@@ -1,6 +1,6 @@
 import "../styles/Envios.css";
-import Footers from "../components/Footers";
-import WhatsAppButton from "../components/WhattsApp";
+// import Footers from "../components/Footers";
+// import WhatsAppButton from "../components/WhattsApp";
 
 const Envios = () => {
   return (
@@ -38,10 +38,10 @@ const Envios = () => {
           ¡Para más info escribinos y despejamos tus dudas! <br />
         </p>
       </section>
-      <div className="footer-envios">
+      {/* <div className="footer-envios">
         <Footers />
         <WhatsAppButton />
-      </div>
+      </div> */}
     </div>
   );
 };
