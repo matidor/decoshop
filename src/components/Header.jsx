@@ -1,11 +1,11 @@
-import TopBar from './TopBar';
-import NavBar from './NavBar';
+import TopBar from "./TopBar";
+import NavBar from "./NavBar";
 
-const Header =  () => {
+const Header = ({ openCart }) => {
   return (
     <header>
       <TopBar />
-      <NavBar />
+      <NavBar openCart={openCart} />
     </header>
   );
 };
